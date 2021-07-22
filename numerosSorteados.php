@@ -10,9 +10,6 @@
     $maxValKeys = array_keys($countArray, $maxVal);
     asort($maxValKeys);
     echo "O(s) número(s) que mais se repete: " . implode(", ", $maxValKeys);
-    // foreach ($maxValKeys as $num) {
-    //     echo $num."; ";
-    // }
     echo "<br>Se repete: $maxVal vezes";
 
 
