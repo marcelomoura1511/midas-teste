@@ -2,10 +2,9 @@
 <?php 
 
 function seculoAno($ano){
-  $seculo = intval(($ano/100)+1);
-  return $seculo
+  $seculo = ($ano%100==0)?intval($ano/100) : intval($ano/100)+1;
+  return $seculo;
 }  
 
-echo seculoAno(1905);
 ?> 
   
